@@ -1,2 +1,2 @@
 Data Strucutres 
-Linked list
+Linked list.
