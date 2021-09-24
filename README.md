@@ -1,3 +1,3 @@
 # Data Structures.
 
-### Implementation of all data structures.
+## Implementation of all data structures.
