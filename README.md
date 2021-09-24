@@ -5,7 +5,7 @@
 ### 1. Stack
 ### 2. Queue
 ### 3. Linked list
-####    Singly Linked list
-####    Doubly Linked list
-####    Circular Linked list
+####    i.  Singly Linked list
+####    ii. Doubly Linked list
+####    iii.Circular Linked list
 ### 4. Trees
