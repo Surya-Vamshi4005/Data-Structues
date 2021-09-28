@@ -9,3 +9,4 @@
 ####    ii. Doubly Linked list.
 ####    iii. Circular Linked list.
 ### 4. Trees.
+### 5. Graphs.
