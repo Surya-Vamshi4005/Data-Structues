@@ -19,6 +19,7 @@ node* delete_kth(node*, int);
 node* add5_to_nodes(node*);
 node* add_node_kth(node*, int, int);
 node* concat_list(node*, node*);
+node* reverse_by_rec(node*);
 int rec_count(node*);
 void print(node*);
 void print_last(node*);
@@ -48,7 +49,8 @@ int main()
     // head = delete_kth(head,2);
     // head = add_node_kth(head, 10, 2);
     print(head);
-    reverse(&head);
+    head = reverse_by_rec(head);
+    // reverse(&head);
     // delete_list(&head);
     print(head);
     // delete_alt(&head);
@@ -431,4 +433,20 @@ void reverse(node** list)
         cur = n;
     }
     *list = prev;
+}
+
+node* reverse_by_rec (node* list)
+{
+    if (list == NULL)
+    {
+        return NULL;
+    }
+    if (list->next == NULL)
+    {
+        return list;
+    }
+    node* head = reverse_by_rec(list->next);
+    list->next->next = list;
+    list->next = NULL;
+    return head;
 }
